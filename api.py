@@ -9,6 +9,7 @@ client_secret = '5315462e90d748c195f94da09424f876'
 redirect_uri="http://localhost:8888/callback"
 
 audio_features = [
+  'duration_ms';
   'danceability',
   'energy',
   'loudness',
@@ -17,8 +18,8 @@ audio_features = [
   'instrumentalness',
   'liveness',
   'valence',
-  'tempo',
-  'duration_ms'
+  'tempo'
+  
   ]
 
 feature = ['artist']
@@ -30,14 +31,11 @@ def get_audio_features(query):
     results = sp.search(q = query, type = 'track')
     track_uri = results['tracks']['items'][0]['uri']
    
-    #track_artist = results['tracks']['items'][0]['artists'][0]['name']
+   
     track_features = sp.audio_features(track_uri)
-    #track_popularity = results['tracks']['items'][0]['popularity']
+ 
     df = pd.DataFrame(track_features, columns = audio_features)
-    #track_explicit = results['tracks']['items'][0]['explicit']
-    #df['artist'] = track_artist
-    #df['popularity'] = track_popularity
-    #df['explicit'] = track_explicit
+  
     return df
 
 def get_audio_artist(query):
