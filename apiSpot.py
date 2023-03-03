@@ -6,7 +6,7 @@ import pickle
 from api import *
 
 
-pickle_in = open('model_elias_sans_cat.pkl', 'rb') 
+pickle_in = open('xg_reg.pkl', 'rb') 
 modelSpot = pickle.load(pickle_in)
 
 
@@ -15,7 +15,7 @@ titre = "Prediction popularité de la chanson en 2022"
 original_title = '<p style="font-family:Courier; color:Blue; font-size: 42px;">{} </p>'.format(titre)
 st.markdown(original_title, unsafe_allow_html=True)
 
-columns_model = ['danceability','energy','loudness','speechiness','acousticness','instrumentalness','liveness','valence','tempo','duration_ms','explicit']
+columns_model = ['duration_ms', 'danceability', 'energy', 'loudness', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo']
 
 
 

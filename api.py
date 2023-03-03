@@ -18,8 +18,7 @@ audio_features = [
   'liveness',
   'valence',
   'tempo',
-  'duration_ms',
-  'explicit'
+  'duration_ms'
   ]
 
 feature = ['artist']
@@ -35,10 +34,10 @@ def get_audio_features(query):
     track_features = sp.audio_features(track_uri)
     #track_popularity = results['tracks']['items'][0]['popularity']
     df = pd.DataFrame(track_features, columns = audio_features)
-    track_explicit = results['tracks']['items'][0]['explicit']
+    #track_explicit = results['tracks']['items'][0]['explicit']
     #df['artist'] = track_artist
     #df['popularity'] = track_popularity
-    df['explicit'] = track_explicit
+    #df['explicit'] = track_explicit
     return df
 
 def get_audio_artist(query):
