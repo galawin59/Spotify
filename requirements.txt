@@ -1,4 +1,6 @@
-streamlit==1.11.0
 pandas==1.5.1
-numpy 
 spotipy==2.22.1
+uvicorn
+requests
+fastapi
+xgboost
