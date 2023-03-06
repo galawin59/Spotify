@@ -11,6 +11,7 @@ Ce projet est destiné à créer une application web permettant à un utilisateu
 ## Usage
 
 Vous pouvez vous rendre sur l'application en allant sur l'adresse 'https://popularity.onrender.com/' dans votre navigateur.
+Vous pouvez requêter directement l'API sur https://spoty-dvvk.onrender.com/
 
 ## Contribution
 
