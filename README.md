@@ -7,11 +7,17 @@ Ce projet est destiné à créer une application web permettant à un utilisateu
 - App web en Django pour consommer l'API avec authentification
 - Base de données SQL (table utilisateur, table des musiques)
 
+## Dépendances
+- Python
+- Django
+- Scikit-learn
+- Spotipy
+- Docker
 
 ## Usage
 
-Vous pouvez vous rendre sur l'application en allant sur l'adresse 'https://popularity.onrender.com/' dans votre navigateur.
-Vous pouvez requêter directement l'API sur https://spoty-dvvk.onrender.com/
+- Vous pouvez vous rendre sur l'application en allant sur l'adresse 'https://popularity.onrender.com/' dans votre navigateur.
+- Vous pouvez requêter directement l'API sur https://spoty-dvvk.onrender.com/
 
 ## Contribution
 
